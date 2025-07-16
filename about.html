@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Saya | Jali Suhaman</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .about-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #e0f2ff;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0.95;
+    }
+
+    .skill-wrapper {
+      padding: 0 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .skill-badge {
+      background-color: #87CEFA;
+      color: white;
+      padding: 6px 14px;
+      margin: 6px 6px 6px 0;
+      border-radius: 20px;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+      font-size: 0.9rem;
+      display: inline-block;
+      max-width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .skill-badge:hover {
+      background-color: #6bbbe7;
+      transform: scale(1.05);
+    }
+
+    .section-content {
+      display: none;
+      margin-top: 15px;
+      text-align: left;
+    }
+
+    .btn-toggle {
+      background-color: #87CEFA;
+      color: white;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: transform 0.3s ease;
+    }
+
+    .btn-toggle:hover {
+      transform: scale(1.05);
+      color: #f0f0f0;
+    }
+    .skill-wrapper {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.skill-badge {
+  background-color: #87CEFA;
+  color: white;
+  padding: 6px 14px;
+  margin: 6px 10px 6px 0;
+  border-radius: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+
+    <!-- Deskripsi + Foto -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <h2>Halo! Saya <strong>Jali Suhaman</strong></h2>
+        <p>Seorang pengembang web dan penggiat AI yang berdedikasi untuk membangun solusi digital yang cerdas dan bermanfaat. Saya senang menggabungkan teknologi, pembelajaran, dan kreativitas dalam setiap proyek yang saya kerjakan.</p>
+        <p>Saya memiliki pengalaman dalam pengembangan aplikasi berbasis <strong>ASP.NET</strong>, <strong>Python</strong>, serta minat khusus dalam bidang <strong>AI/ML dan edukasi teknologi</strong>. Bagi saya, belajar tanpa batas adalah semangat utama.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="img/jali.png" alt="Foto Jali Suhaman" class="about-img">
+      </div>
+    </div>
+
+    <!-- Skills -->
+<div class="skill-wrapper">
+  <h4 class="mb-3">Skills</h4>
+  <div>
+    <span class="skill-badge">ASP.NET MVC & Razor Pages</span>
+    <span class="skill-badge">HTML, CSS, JavaScript, Bootstrap</span>
+    <span class="skill-badge">Python & Machine Learning</span>
+    <span class="skill-badge">Microsoft SQL Server & EF</span>
+    <span class="skill-badge">Komunikasi, Presentasi, Edukasi</span>
+  </div>
+</div>
+
+
+    <!-- Tombol Interaktif -->
+    <div class="text-center">
+      <button class="btn-toggle" onclick="toggleSection('karakter')">Karakter</button>
+      <button class="btn-toggle" onclick="toggleSection('eduwork')">Education & Work</button>
+      <button class="btn-toggle" onclick="toggleSection('future')">MyFuturePlan</button>
+    </div>
+
+    <!-- Konten: Karakter -->
+    <div id="karakter" class="section-content">
+      <div class="row align-items-start">
+        <div class="col-md-4 text-center mb-3">
+          <img src="img/jali1.jpg" alt="Karakter Jali" class="img-fluid rounded-circle shadow-sm" style="max-width: 200px;">
+        </div>
+        <div class="col-md-8">
+          <h5>Karakter Pribadi</h5>
+          <ul>
+            <li>Humoris dan penuh semangat, sabar dalam menghadapi masalah tanpa memperbesarnya.</li>
+            <li>Terus belajar menjadi amanah, jujur, dan istiqomah dalam kebaikan, khususnya dalam mengamalkan ilmu.</li>
+            <li>Mandiri dan tidak ingin menjadi beban bagi orang lain.</li>
+            <li>Polos dalam beberapa kondisi untuk menghindari kesalahpahaman; memilih waktu yang tepat untuk menjelaskan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Konten: Education & Work -->
+    <div id="eduwork" class="section-content">
+      <h5>Education</h5>
+      <p><strong>Universitas Amikom Purwokerto</strong> – Bachelor in Computer Science | GPA: 3.59 / 4.00<br>
+      2018 - 2022, Purwokerto, Indonesia<br>
+      Relevant courses: AI, Mobile & Website Programming, Architecture & Computer Organization, Human & Computer Interaction</p>
+      <p><strong>PESMA Masjid Fatimatuzzahra</strong> – Ketua Mahasantri, Trainer of Public Speaking, Tasmih Juz 16 (Zayyid Ziddan)</p>
+      <p><strong>Cendekia Laznas Al-Irsyad</strong> – Head of Program Oemah Sinau, Content Writer, Video Editing, Desain Grafis, Social Dedication</p>
+
+      <h5>Work Experience</h5>
+      <ul>
+        <li><strong>PT. KUMON DENGKLOK PERMAI</strong> – Assistant Math Specialist (2017–2018)</li>
+        <li><strong>PT. ORBIT VENTURA INDONESIA</strong> – AI Instructor & Mentor (2022–2024)</li>
+        <li><strong>THE LAB INDONESIA</strong> – Instructor Python Programming (Aug 2024 – Present)</li>
+      </ul>
+    </div>
+
+    <!-- Konten: MyFuturePlan -->
+    <div id="future" class="section-content">
+      <h5>My Future Plan</h5>
+      <p>Saya senang dengan dunia pendidikan dan yakin bahwa pendidikan akan merubah dunia!</p>
+      <p>Dalam kurun waktu 6–10 tahun ke depan, saya bercita-cita membangun yayasan pendidikan berbasis teknologi untuk semua kalangan khususnya yang kurang mampu, yatim, dan masyarakat umum agar memberi kebermanfaatan yang lebih luas.</p>
+    </div>
+
+  </div>
+
+  <!-- Script -->
+  <script>
+    function toggleSection(id) {
+      const sections = ['karakter', 'eduwork', 'future'];
+      sections.forEach(sec => {
+        document.getElementById(sec).style.display =
+          (sec === id && document.getElementById(sec).style.display !== 'block') ? 'block' : 'none';
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
